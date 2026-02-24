@@ -41,6 +41,13 @@ img {
     border: 5px solid #0077b6; /* Borde azul */
 }
 
+.icon
+{
+    max-width: 15px;
+    border-color: #f5f5f5;
+}
+
+
 h1 {
     color: #0077b6; /* Texto Azul */
 }
@@ -62,6 +69,7 @@ nav a {
 nav a:hover {
     color: #0077b6; /* Efecto al pasar el mouse */
 }
+
 
 button {
     background-color: #0077b6;
@@ -98,7 +106,7 @@ footer {
     color: #38bdf8; 
 }
 
-.modo-oscuro nav a {
+.modo-oscuro a {
     color: #ffffff; /* Los links se vuelven blancos en modo oscuro */
 }
 
