@@ -16,6 +16,26 @@ header {
     border-bottom: 2px solid #dddddd;
 }
 
+
+/* 1. Declaramos la película (Los Keyframes) */
+@keyframes flotar {
+    0% {
+        transform: translateY(0px); /* Posición original */
+    }
+    50% {
+        transform: translateY(-15px); /* Sube 15 píxeles */
+    }
+    100% {
+        transform: translateY(0px); /* Vuelve a bajar */
+    }
+}
+
+/* 2. Le asignamos la película al elemento */
+.mi-avatar {
+    /* Llamamos a la animación "flotar", dura 3 segundos, es fluida (ease-in-out) y nunca se detiene (infinite) */
+    animation: flotar 3s ease-in-out infinite;
+}
+
 /* Centramos el contenido principal con Flexbox */
 main {
     padding: 40px;
