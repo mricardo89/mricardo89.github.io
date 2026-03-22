@@ -3,65 +3,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Dr. Miguel R. González | Investigador y Profesor</title>
+    <meta name="description" content="Portafolio académico y profesional del Dr. Miguel Ricardo González Márquez. Especialista en Visión por Computadora, Machine Learning y Docencia.">
+    
+    <meta property="og:title" content="Dr. Miguel R. González | Portafolio Académico">
+    <meta property="og:description" content="Investigación aplicada, desarrollo de software y puente entre la academia y la industria.">
+    <meta property="og:type" content="website">
+    
     <link rel="stylesheet" href="style.css">
-    <title>Portafolio | Profesor de Desarrollo Web</title>
-    <style>
-
-    </style>
 </head>
 <body>
 
-    <header>
-        <h1>Miguel Ricardo González Márquez</h1>
-        
-        <nav>
-            <ul>
-                <li><a href="#hero">Inicio</a></li>
-                <li><a href="#sobre-mi">Sobre mí</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
+    <header class="hero">
+        <div class="container">
+            <div class="hero-flex-container">
+                
+                <div class="hero-photo-wrapper">
+                    <img src="images/perfil.jpeg" alt="Fotografía del Dr. Miguel Ricardo González Márquez" class="profile-photo">
+                </div>
 
-        <button onclick="alternarTema()">🌙 Cambiar Tema</button>
+                <div class="hero-text-wrapper">
+                    <h1>Dr. Miguel Ricardo González Márquez</h1>
+                    <h2>Investigador, Desarrollador y Docente</h2>
+                    <p class="hero-subtitle">Especialista en Visión por Computadora y Machine Learning</p>
+                    <div class="cta-buttons">
+                        <a href="documents/Curriculum_VITAE_v1.pdf" target="_blank" class="btn btn-primary">Descargar CV Completo</a>
+                        <a href="mailto:ricglez90@gmail.com" class="btn btn-secondary">Contactar</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </header>
 
-    <main>
-        <div>
+    <section class="container section">
+        <h2 class="section-title">Filosofía Docente e Investigación</h2>
+        <div class="content-box">
+            <p>Me apasiona tender puentes entre la academia y la industria tecnológica. Mi enfoque se centra en la docencia y la investigación aplicada para resolver retos reales del sector, preparando a los estudiantes con tecnologías de vanguardia y casos de estudio prácticos.</p>
+            <p><strong>Líneas de interés:</strong> Desarrollo de software, Procesamiento digital de imágenes, reconocimiento de patrones, aprendizaje de máquina y aprendizaje profundo.</p>
+        </div>
+    </section>
+
+    <section class="container section bg-light">
+            <h2 class="section-title">Stack Tecnológico</h2>
             
-            <section id="hero">
-                <h2>Profesor de Código & Diseño</h2>
-                <img class="mi-avatar" src="images/avatar.png" alt="Avatar del Profe">
-                <p>Fiel creyente de que la programación es la herramienta más creativa que existe.</p>
-            </section>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Lenguajes de programación</h3>
+                    <div class="skills-container">
+                        <span class="badge">Python</span>
+                        <span class="badge">C++</span>
+                        <span class="badge">Matlab</span>
+                        <span class="badge">JavaScript</span>
+                    </div>
+                </div>
 
-            <section id="sobre-mi">
-                <h2>¿Quién soy?</h2>
-                <p>Soy Ingeniero en sistemas computacionales</p>
-                <p>Profesor de desarrollo web</p>
-                <p>Investigador</p>
-                <p>Apasionado de la tecnología</p>
-            </section>
+                <div class="skill-category">
+                    <h3>Desarrollo web</h3>
+                    <div class="skills-container">
+                        <span class="badge">Node.js</span>
+                        <span class="badge">Express</span>
+                        <span class="badge">HTML5</span>
+                        <span class="badge">CSS3</span>
+                        <span class="badge">TailWindCSS</span>
+                    </div>
+                </div>
 
-            <section id="contacto">
-                <h2>Mis redes sociales</h2>
-                <p><img src="images/linkedin_icon.png" class="icon"><a href="https://www.linkedin.com/in/miguel-ricardo-gonz%C3%A1lez-m%C3%A1rquez-7258a421b/">LinkedIn</a></p>
-                <p><img src="images/github_icon.png" class="icon"><a href="https://github.com/mricardo89">Github</a></p>
-                <p><img src="images/g_scholar.png" class="icon"><a href="https://scholar.google.com/citations?user=AlYDq20AAAAJ&hl=es&oi=ao">Google scholar</a></p>
-            </section>
+                <div class="skill-category">
+                    <h3>Machine learning</h3>
+                    <div class="skills-container">
+                        <span class="badge">PyTorch</span>
+                        <span class="badge">OpenCV</span>
+                        <span class="badge">Scikit-Learn</span>
+                        <span class="badge">Matplotlib</span>
+                        <span class="badge">Sympy</span>
+                        <span class="badge">ONNXRuntime</span>
+                        <span class="badge">CUDA</span>
+                        <span class="badge">TensorRT</span>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section class="container section">
+        <h2 class="section-title">Productividad Científica Destacada</h2>
+        <div class="grid-cards">
+            
+            <article class="card">
+                <div class="card-img-placeholder">🍇 Detección de Uvas (CNN)</div>
+                <div class="card-content">
+                    <h3>Comparison of CNN architectures for single grape detection</h3>
+                    <p>Análisis comparativo de arquitecturas de redes neuronales convolucionales aplicadas a la agricultura de precisión.</p>
+                    <a href="https://doi.org/10.1016/j.compag.2025.109930" target="_blank" class="link">Ver publicación original &rarr;</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-img-placeholder">⭕ Detección de Círculos</div>
+                <div class="card-content">
+                    <h3>Multiple circle detection in images</h3>
+                    <p>Enfoque simple basado en algoritmos evolutivos y un nuevo benchmark de imágenes para la detección de múltiples círculos.</p>
+                    <a href="https://doi.org/10.1007/s10044-021-01007-6" target="_blank" class="link">Ver publicación original &rarr;</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-img-placeholder">🍇 Clasificación Píxel a Píxel</div>
+                <div class="card-content">
+                    <h3>Grape Bunch Detection Using A Pixel-Wise Classification</h3>
+                    <p>Detección de racimos mediante procesamiento de imágenes y clasificación a nivel de píxel. Publicación de conferencia IEEE.</p>
+                    <a href="https://doi.org/10.1109/ROPEC50909.2020.9258707" target="_blank" class="link">Ver publicación original &rarr;</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-img-placeholder">🦴 Rayos X y Vértebras</div>
+                <div class="card-content">
+                    <h3>Method to extract an enhanced cervical vertebrae area</h3>
+                    <p>Método para extraer y mejorar el área de las vértebras cervicales a partir de imágenes de rayos X digitales.</p>
+                    <a href="https://doi.org/10.1016/j.mex.2018.06.009" target="_blank" class="link">Ver publicación original &rarr;</a>
+                </div>
+            </article>
 
         </div>
-    </main>
+    </section>
+
+    <section class="container section bg-light">
+        <h2 class="section-title">Portafolio Docente y Desarrollo</h2>
+        <div class="grid-cards">
+            <article class="card">
+                <div class="card-content">
+                    <h3>🌐 Material de Curso: Desarrollo Web</h3>
+                    <p>Repositorio académico creado para albergar prácticas, código y proyectos estructurados para alumnos de nivel universitario, abarcando HTML, JS y PHP.</p>
+                    <a href="https://github.com/mricardo89/webDevelopment" target="_blank" class="link">Ver repositorio en GitHub &rarr;</a>
+                </div>
+                <div class="card-content">
+                    <h3>✏️ Material de Curso: Programación de sitios dinámicos</h3>
+                    <p>Repositorio académico creado para albergar prácticas, código y proyectos estructurados para alumnos de nivel universitario, abarcando HTML, CSS y JS </p>
+                    <a href="https://github.com/mricardo89/webDesign" target="_blank" class="link">Ver repositorio en GitHub &rarr;</a>
+                </div>
+            </article>
+        </div>
+    </section>
 
     <footer>
-        <p>© 2026 Programación de Sitios Dinámicos</p>
+        <div class="container text-center">
+            <p>&copy; 2026 Miguel Ricardo González Márquez. Creado para la divulgación académica e investigación.</p>
+            <p>Ensenada, Baja California, México.</p>
+        </div>
     </footer>
-
-    <script>
-        function alternarTema() {
-            let cuerpo = document.body;
-            cuerpo.classList.toggle("modo-oscuro");
-        }
-    </script>
 
 </body>
 </html>
