@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Dr. Miguel R. González | Investigador y Profesor</title>
+    <title>Dr. Miguel R. González | Portafolio</title>
     <meta name="description" content="Portafolio académico y profesional del Dr. Miguel Ricardo González Márquez. Especialista en Visión por Computadora, Machine Learning y Docencia.">
     
     <meta property="og:title" content="Dr. Miguel R. González | Portafolio Académico">
@@ -17,6 +17,11 @@
 
     <header class="hero">
         <div class="container">
+            
+            <div style="display: flex; justify-content: flex-end; margin-bottom: 20px;">
+                <button id="lang-toggle" onclick="toggleLanguage()" class="btn btn-secondary" style="padding: 6px 12px; font-size: 0.9rem;">English</button>
+            </div>
+
             <div class="hero-flex-container">
                 
                 <div class="hero-photo-wrapper">
@@ -24,12 +29,24 @@
                 </div>
 
                 <div class="hero-text-wrapper">
-                    <h1>Dr. Miguel Ricardo González Márquez</h1>
-                    <h2>Investigador, Desarrollador y Docente</h2>
-                    <p class="hero-subtitle">Especialista en Visión por Computadora y Machine Learning</p>
+                    <h1 class="lang-es">Dr. Miguel Ricardo González Márquez</h1>
+                    <h1 class="lang-en">Miguel Ricardo González Márquez, Ph.D.</h1>
+                    
+                    <h2 class="lang-es">Ingeniero Principal de Visión por Computadora y Docente</h2>
+                    <h2 class="lang-en">Lead Computer Vision Engineer & Educator</h2>
+                    
+                    <p class="hero-subtitle lang-es">Especialista en IA, Optimización de Inferencia y Arquitectura Full-Stack</p>
+                    <p class="hero-subtitle lang-en">Specialist in AI, Inference Optimization & Full-Stack Architecture</p>
+                    
                     <div class="cta-buttons">
-                        <a href="documents/Curriculum_VITAE_lv.pdf" target="_blank" class="btn btn-primary">Descargar CV Completo</a>
-                        <a href="mailto:ricglez90@gmail.com" class="btn btn-secondary">Contactar</a>
+                        <!-- <a href="documents/Curriculum_VITAE_lv.pdf" target="_blank" class="btn btn-primary">
+                            <span class="lang-es">Descargar CV Completo</span>
+                            <span class="lang-en">Download Full CV</span>
+                        </a> -->
+                        <a href="mailto:ricglez90@gmail.com" class="btn btn-secondary">
+                            <span class="lang-es">Contactar</span>
+                            <span class="lang-en">Contact</span>
+                        </a>
                     </div>
                 </div>
 
@@ -38,93 +55,110 @@
     </header>
 
     <section class="container section">
-        <h2 class="section-title">Filosofía Docente e Investigación</h2>
+        <h2 class="section-title lang-es">Perfil Profesional y Filosofía Docente</h2>
+        <h2 class="section-title lang-en">Professional Profile & Teaching Philosophy</h2>
+        
         <div class="content-box">
-            <p>Me apasiona tender puentes entre la academia y la industria tecnológica. Mi enfoque se centra en la docencia y la investigación aplicada para resolver retos reales del sector, preparando a los estudiantes con tecnologías de vanguardia y casos de estudio prácticos.</p>
-            <p><strong>Líneas de interés:</strong> Desarrollo de software, Procesamiento digital de imágenes, reconocimiento de patrones, aprendizaje de máquina y aprendizaje profundo.</p>
+            <div class="lang-es">
+                <p>Soy <strong>Doctor en Ciencias</strong> y Arquitecto de Visión por Computadora. Mi experiencia central abarca la optimización de inferencia de aprendizaje profundo (<strong>C++, CUDA, PyTorch, TensorRT</strong>) para construir pipelines listos para producción, junto con el diseño de sistemas end-to-end en la nube utilizando <strong>Vue 3 y Node.js</strong>.</p>
+                <p>Me apasiona tender puentes entre la academia y la industria tecnológica. Lidero proyectos complejos, actúo como mentor técnico para equipos de ingeniería (guiándolos en certificaciones de programación) y preparo a mis estudiantes con tecnologías de vanguardia y arquitecturas aplicadas a retos reales del sector.</p>
+            </div>
+            
+            <div class="lang-en">
+                <p>I am a <strong>Ph.D. in Sciences</strong> and Computer Vision Architect. My core expertise spans deep learning inference optimization (<strong>C++, CUDA, PyTorch, TensorRT</strong>) to build production-ready vision pipelines, alongside designing scalable end-to-end cloud systems using <strong>Vue 3 and Node.js</strong>.</p>
+                <p>I am passionate about bridging the gap between academia and the tech industry. I lead complex technical projects, serve as a technical mentor for engineering teams (guiding them through programming certifications), and prepare my students with cutting-edge technologies applied to real-world industrial challenges.</p>
+            </div>
         </div>
     </section>
 
     <section class="container section bg-light">
-            <h2 class="section-title">Stack Tecnológico</h2>
+            <h2 class="section-title lang-es">Stack Tecnológico</h2>
+            <h2 class="section-title lang-en">Technology Stack</h2>
             
             <div class="skills-grid">
                 <div class="skill-category">
-                    <h3>Lenguajes de programación</h3>
+                    <h3 class="lang-es">Lenguajes y Arquitectura</h3>
+                    <h3 class="lang-en">Languages & Architecture</h3>
                     <div class="skills-container">
-                        <span class="badge">Python</span>
                         <span class="badge">C++</span>
-                        <span class="badge">Matlab</span>
+                        <span class="badge">Python</span>
                         <span class="badge">JavaScript</span>
+                        <span class="badge">Matlab</span>
                     </div>
                 </div>
 
                 <div class="skill-category">
-                    <h3>Desarrollo web</h3>
+                    <h3 class="lang-es">Desarrollo Web (Cloud)</h3>
+                    <h3 class="lang-en">Web Development (Cloud)</h3>
                     <div class="skills-container">
+                        <span class="badge">Vue 3 (Vite)</span>
                         <span class="badge">Node.js</span>
+                        <span class="badge">Supabase</span>
                         <span class="badge">Express</span>
-                        <span class="badge">HTML5</span>
-                        <span class="badge">CSS3</span>
-                        <span class="badge">TailWindCSS</span>
+                        <span class="badge">TailwindCSS</span>
                     </div>
                 </div>
 
                 <div class="skill-category">
-                    <h3>Machine learning</h3>
+                    <h3 class="lang-es">Machine Learning & CV</h3>
+                    <h3 class="lang-en">Machine Learning & CV</h3>
                     <div class="skills-container">
                         <span class="badge">PyTorch</span>
-                        <span class="badge">OpenCV</span>
-                        <span class="badge">Scikit-Learn</span>
-                        <span class="badge">Matplotlib</span>
-                        <span class="badge">Sympy</span>
-                        <span class="badge">ONNXRuntime</span>
-                        <span class="badge">CUDA</span>
                         <span class="badge">TensorRT</span>
+                        <span class="badge">CUDA</span>
+                        <span class="badge">ONNXRuntime</span>
+                        <span class="badge">OpenCV</span>
+                        <span class="badge">LangChain</span>
+                        <span class="badge">Scikit-Learn</span>
                     </div>
                 </div>
             </div>
     </section>
 
     <section class="container section">
-        <h2 class="section-title">Productividad Científica Destacada</h2>
+        <h2 class="section-title lang-es">Productividad Científica Destacada</h2>
+        <h2 class="section-title lang-en">Scientific Publications</h2>
         <div class="grid-cards">
             
             <article class="card">
-                <div class="card-img-placeholder">🍇 Detección de Uvas (CNN)</div>
+                <div class="card-img-placeholder">🍇 <span class="lang-es" style="margin-left: 5px;">Detección de Uvas</span><span class="lang-en" style="margin-left: 5px;">Grape Detection</span></div>
                 <div class="card-content">
                     <h3>Comparison of CNN architectures for single grape detection</h3>
-                    <p>Análisis comparativo de arquitecturas de redes neuronales convolucionales aplicadas a la agricultura de precisión.</p>
-                    <a href="https://doi.org/10.1016/j.compag.2025.109930" target="_blank" class="link">Ver publicación original &rarr;</a>
-                    <a href="https://github.com/ricglez90/grape_learning" target="_blank" class="link">Repositorio &rarr;</a>
+                    <p class="lang-es">Análisis comparativo de arquitecturas de redes neuronales convolucionales aplicadas a la agricultura de precisión.</p>
+                    <p class="lang-en">Comparative analysis of convolutional neural network architectures applied to precision agriculture.</p>
+                    <a href="https://doi.org/10.1016/j.compag.2025.109930" target="_blank" class="link"><span class="lang-es">Ver publicación original &rarr;</span><span class="lang-en">View Original Paper &rarr;</span></a>
+                    <a href="https://github.com/ricglez90/grape_learning" target="_blank" class="link"><span class="lang-es">Repositorio &rarr;</span><span class="lang-en">Repository &rarr;</span></a>
                 </div>
             </article>
 
             <article class="card">
-                <div class="card-img-placeholder">⭕ Detección de Círculos</div>
+                <div class="card-img-placeholder">⭕ <span class="lang-es" style="margin-left: 5px;">Detección de Círculos</span><span class="lang-en" style="margin-left: 5px;">Circle Detection</span></div>
                 <div class="card-content">
                     <h3>Multiple circle detection in images</h3>
-                    <p>Enfoque simple basado en algoritmos evolutivos y un nuevo benchmark de imágenes para la detección de múltiples círculos.</p>
-                    <a href="https://doi.org/10.1007/s10044-021-01007-6" target="_blank" class="link">Ver publicación original &rarr;</a>
-                    <a href="https://github.com/ricglez89/circles_dataset" target="_blank" class="link">Repositorio &rarr;</a>
+                    <p class="lang-es">Enfoque simple basado en algoritmos evolutivos y un nuevo benchmark de imágenes para la detección de múltiples círculos.</p>
+                    <p class="lang-en">Simple approach based on evolutionary algorithms and a new image benchmark for multiple circle detection.</p>
+                    <a href="https://doi.org/10.1007/s10044-021-01007-6" target="_blank" class="link"><span class="lang-es">Ver publicación original &rarr;</span><span class="lang-en">View Original Paper &rarr;</span></a>
+                    <a href="https://github.com/ricglez89/circles_dataset" target="_blank" class="link"><span class="lang-es">Repositorio &rarr;</span><span class="lang-en">Repository &rarr;</span></a>
                 </div>
             </article>
 
             <article class="card">
-                <div class="card-img-placeholder">🍇 Clasificación Píxel a Píxel</div>
+                <div class="card-img-placeholder">🍇 <span class="lang-es" style="margin-left: 5px;">Clasificación Píxel a Píxel</span><span class="lang-en" style="margin-left: 5px;">Pixel-Wise Classification</span></div>
                 <div class="card-content">
                     <h3>Grape Bunch Detection Using A Pixel-Wise Classification</h3>
-                    <p>Detección de racimos mediante procesamiento de imágenes y clasificación a nivel de píxel. Publicación de conferencia IEEE.</p>
-                    <a href="https://doi.org/10.1109/ROPEC50909.2020.9258707" target="_blank" class="link">Ver publicación original &rarr;</a>
+                    <p class="lang-es">Detección de racimos mediante procesamiento de imágenes y clasificación a nivel de píxel. Publicación de conferencia IEEE.</p>
+                    <p class="lang-en">Bunch detection through image processing and pixel-level classification. IEEE conference publication.</p>
+                    <a href="https://doi.org/10.1109/ROPEC50909.2020.9258707" target="_blank" class="link"><span class="lang-es">Ver publicación original &rarr;</span><span class="lang-en">View Original Paper &rarr;</span></a>
                 </div>
             </article>
 
             <article class="card">
-                <div class="card-img-placeholder">🦴 Rayos X y Vértebras</div>
+                <div class="card-img-placeholder">🦴 <span class="lang-es" style="margin-left: 5px;">Rayos X y Vértebras</span><span class="lang-en" style="margin-left: 5px;">X-Rays & Vertebrae</span></div>
                 <div class="card-content">
                     <h3>Method to extract an enhanced cervical vertebrae area</h3>
-                    <p>Método para extraer y mejorar el área de las vértebras cervicales a partir de imágenes de rayos X digitales.</p>
-                    <a href="https://doi.org/10.1016/j.mex.2018.06.009" target="_blank" class="link">Ver publicación original &rarr;</a>
+                    <p class="lang-es">Método para extraer y mejorar el área de las vértebras cervicales a partir de imágenes de rayos X digitales.</p>
+                    <p class="lang-en">Method to extract and enhance the cervical vertebrae area from digital X-ray images.</p>
+                    <a href="https://doi.org/10.1016/j.mex.2018.06.009" target="_blank" class="link"><span class="lang-es">Ver publicación original &rarr;</span><span class="lang-en">View Original Paper &rarr;</span></a>
                 </div>
             </article>
 
@@ -132,21 +166,26 @@
     </section>
 
     <section class="container section bg-light">
-        <h2 class="section-title">Portafolio Docente y Desarrollo</h2>
+        <h2 class="section-title lang-es">Portafolio Docente y Desarrollo</h2>
+        <h2 class="section-title lang-en">Teaching & Development Portfolio</h2>
         <div class="grid-cards">
             <article class="card">
                 <div class="card-content">
-                    <h3>🌐 Material de Curso: Desarrollo Web</h3>
-                    <p>Repositorio académico creado para albergar prácticas, código y proyectos estructurados para alumnos de nivel universitario, abarcando HTML, JS y PHP.</p>
-                    <a href="https://github.com/mricardo89/webDevelopment" target="_blank" class="link">Ver repositorio en GitHub &rarr;</a>
+                    <h3 class="lang-es">🌐 Material de Curso: Desarrollo Web</h3>
+                    <h3 class="lang-en">🌐 Course Material: Web Development</h3>
+                    <p class="lang-es">Repositorio académico para prácticas, código y proyectos estructurados para alumnos universitarios, abarcando Node.js, APIs y frameworks modernos.</p>
+                    <p class="lang-en">Academic repository for university-level practical exercises, code, and structured projects covering Node.js, APIs, and modern frameworks.</p>
+                    <a href="https://github.com/mricardo89/webDevelopment" target="_blank" class="link">GitHub &rarr;</a>
                 </div>
             </article>
 
             <article class="card">
                 <div class="card-content">
-                    <h3>✏️ Material de Curso: Programación de sitios dinámicos</h3>
-                    <p>Repositorio académico creado para albergar prácticas, código y proyectos estructurados para alumnos de nivel universitario, abarcando HTML, CSS y JS </p>
-                    <a href="https://github.com/mricardo89/webDesign" target="_blank" class="link">Ver repositorio en GitHub &rarr;</a>
+                    <h3 class="lang-es">✏️ Material de Curso: Programación Dinámica</h3>
+                    <h3 class="lang-en">✏️ Course Material: Dynamic Programming</h3>
+                    <p class="lang-es">Repositorio académico para diseño y arquitectura web enfocada en proyectos para estudiantes, abarcando estándares HTML, CSS y JS avanzados.</p>
+                    <p class="lang-en">Academic repository for web design and architecture focused on student projects, covering advanced HTML, CSS, and JS standards.</p>
+                    <a href="https://github.com/mricardo89/webDesign" target="_blank" class="link">GitHub &rarr;</a>
                 </div>
             </article>
         </div>
@@ -154,10 +193,38 @@
 
     <footer>
         <div class="container text-center">
-            <p>&copy; 2026 Miguel Ricardo González Márquez. Creado para la divulgación académica e investigación.</p>
+            <p class="lang-es">&copy; 2026 Miguel Ricardo González Márquez. Creado para la divulgación académica e investigación.</p>
+            <p class="lang-en">&copy; 2026 Miguel Ricardo González Márquez. Academic research and professional portfolio.</p>
             <p>Ensenada, Baja California, México.</p>
         </div>
     </footer>
+
+    <script>
+        function toggleLanguage() {
+            let cuerpo = document.body;
+            let btn = document.getElementById('lang-toggle');
+            
+            cuerpo.classList.toggle('en-active');
+            
+            if (cuerpo.classList.contains('en-active')) {
+                btn.textContent = 'Español';
+                localStorage.setItem('idioma', 'en');
+                document.documentElement.lang = 'en';
+            } else {
+                btn.textContent = 'English';
+                localStorage.setItem('idioma', 'es');
+                document.documentElement.lang = 'es';
+            }
+        }
+
+        window.onload = () => {
+            if (localStorage.getItem('idioma') === 'en') {
+                document.body.classList.add('en-active');
+                document.getElementById('lang-toggle').textContent = 'Español';
+                document.documentElement.lang = 'en';
+            }
+        };
+    </script>
 
 </body>
 </html>

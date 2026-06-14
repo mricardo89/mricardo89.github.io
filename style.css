@@ -52,7 +52,7 @@ body {
 .hero {
     background-color: var(--primary-color);
     color: var(--white);
-    padding: 100px 0; /* Un poco más de aire */
+    padding: 60px 0 100px 0; /* Ajustado el padding superior para el botón */
 }
 
 .hero-flex-container {
@@ -111,7 +111,6 @@ body {
     flex-wrap: wrap;
 }
 
-/* Botones y otros estilos permanecen igual... */
 .btn {
     display: inline-block;
     padding: 12px 24px;
@@ -119,6 +118,8 @@ body {
     text-decoration: none;
     font-weight: 600;
     transition: var(--transition);
+    cursor: pointer;
+    border: none;
 }
 
 .btn-primary {
@@ -207,6 +208,7 @@ body {
     color: var(--white);
     transform: translateY(-2px);
 }
+
 /* Cards Grid */
 .grid-cards {
     display: grid;
@@ -284,20 +286,20 @@ footer p {
     margin-bottom: 5px;
 }
 
-/* AJUSTES RESPONSIVOS PARA CELULARES (Sección Hero) */
+/* AJUSTES RESPONSIVOS PARA CELULARES */
 @media (max-width: 768px) {
     .hero {
-        padding: 60px 0;
-        text-align: center; /* Centrar texto en móvil */
+        padding: 40px 0;
+        text-align: center;
     }
 
     .hero-flex-container {
-        flex-direction: column; /* Apilar foto y texto verticalmente */
+        flex-direction: column; 
         gap: 30px;
     }
 
     .profile-photo {
-        width: 150px; /* Foto un poco más pequeña en móvil */
+        width: 150px; 
         height: 150px;
     }
 
@@ -310,6 +312,18 @@ footer p {
     }
 
     .cta-buttons {
-        justify-content: center; /* Centrar botones en móvil */
+        justify-content: center;
     }
 }
+
+/* ---------------------------------------------------
+   LÓGICA DE IDIOMAS
+--------------------------------------------------- */
+.lang-en { display: none; }
+body.en-active .lang-es { display: none; }
+body.en-active div.lang-en, 
+body.en-active p.lang-en, 
+body.en-active h1.lang-en,
+body.en-active h2.lang-en,
+body.en-active h3.lang-en { display: block; }
+body.en-active span.lang-en { display: inline; }
